@@ -1,0 +1,70 @@
+@media screen and (max-width:768px){
+
+    .hero{
+        grid-template-columns: 1fr;
+    }
+
+    .hero>img {
+        display: none;
+    }
+
+    .hero>.hero-info{
+        text-align:center;
+    }
+
+    .hero>.hero-info>h1{
+        font-size: 3rem;
+    }
+
+    /* Services */
+    .services{
+        margin-top:20px
+    }
+
+    .services>h3{
+        font-size: 1.5rem;
+    }
+
+    .dishes{
+        grid-template-columns:1fr 1fr;
+        gap:10px
+    }
+
+
+    /* menu */
+    .menu{
+        margin-top:20px
+    }
+
+    .menu>.menu-grid{
+        gap:10px;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: auto;
+    }
+
+    .menu>h3{
+        font-size: 1.5rem;
+    }
+
+    .menu  >.menu-grid > .menu-grid-item-media-query-770{
+        grid-area: 1/1/3/3;
+    }
+
+}
+
+@media screen and (max-width:450px) {
+    .hero{
+        padding-right: 20px 
+    }
+
+    /* menu */
+    .menu>.menu-grid{
+        gap:10px;
+        grid-template-columns: 1fr 
+    }
+
+    .menu  >.menu-grid > .menu-grid-item-media-query-770{
+        grid-area: 1/1;
+    }
+    
+}
